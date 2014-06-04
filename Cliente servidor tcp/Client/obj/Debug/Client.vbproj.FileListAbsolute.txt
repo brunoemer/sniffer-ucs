@@ -1,0 +1,6 @@
+C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\Client\obj\Debug\Client.exe
+C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\Client\obj\Debug\Client.pdb
+C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\Client\bin\Client.exe
+C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\Client\bin\Client.pdb
+C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\Client\bin\Client.xml
+C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\Client\obj\Debug\Client.xml

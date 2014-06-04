@@ -1,0 +1,6 @@
+C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\TCPSever\obj\Debug\TCPSever.exe
+C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\TCPSever\obj\Debug\TCPSever.pdb
+C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\TCPSever\bin\TCPSever.exe
+C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\TCPSever\bin\TCPSever.pdb
+C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\TCPSever\bin\TCPSever.xml
+C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\TCPSever\obj\Debug\TCPSever.xml
