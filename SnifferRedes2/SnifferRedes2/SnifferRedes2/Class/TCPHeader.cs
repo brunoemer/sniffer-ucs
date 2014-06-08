@@ -23,7 +23,8 @@ namespace MJsniffer
         private byte   byHeaderLength;            //Header length
         private ushort usMessageLength;           //Length of the data being carried
         private byte[] byTCPData = new byte[4096];//Data carried by the TCP packet
-       
+
+
         public TCPHeader(byte [] byBuffer, int nReceived)
         {
             try
@@ -65,6 +66,8 @@ namespace MJsniffer
 
                 //Copy the TCP data into the data buffer
                 Array.Copy(byBuffer, byHeaderLength, byTCPData, 0, nReceived - byHeaderLength);
+
+
             }
             catch (Exception ex)
             {
@@ -153,8 +156,8 @@ namespace MJsniffer
 
                 //First we extract the flags
                 int nFlags = usDataOffsetAndFlags & 0x3F;
- 
-                string strFlags = string.Format ("0x{0:x2} (", nFlags);
+
+                string strFlags = "";// string.Format("0x{0:x2} (", nFlags);
 
                 //Now we start looking whether individual bits are set or not
                 if ((nFlags & 0x01) != 0)
@@ -181,16 +184,16 @@ namespace MJsniffer
                 {
                     strFlags += "URG";
                 }
-                strFlags += ")";
+                //strFlags += ")";
 
-                if (strFlags.Contains("()"))
-                {
-                    strFlags = strFlags.Remove(strFlags.Length - 3);
-                }
-                else if (strFlags.Contains(", )"))
-                {
-                    strFlags = strFlags.Remove(strFlags.Length - 3, 2);
-                }
+                //if (strFlags.Contains("()"))
+                //{
+                //    strFlags = strFlags.Remove(strFlags.Length - 3);
+                //}
+                //else if (strFlags.Contains(", )"))
+                //{
+                //    strFlags = strFlags.Remove(strFlags.Length - 3, 2);
+                //}
 
                 return strFlags;
             }

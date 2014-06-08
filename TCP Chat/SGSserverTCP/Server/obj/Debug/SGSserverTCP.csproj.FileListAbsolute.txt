@@ -1,0 +1,10 @@
+C:\Users\Jonas\Downloads\tcpchat\TCP Chat\SGSserverTCP\Server\bin\Debug\Server.exe
+C:\Users\Jonas\Downloads\tcpchat\TCP Chat\SGSserverTCP\Server\bin\Debug\Server.pdb
+C:\Users\Jonas\Downloads\tcpchat\TCP Chat\SGSserverTCP\Server\obj\Debug\SGSserverTCP.csprojResolveAssemblyReference.cache
+C:\Users\Jonas\Downloads\tcpchat\TCP Chat\SGSserverTCP\Server\obj\Debug\Server.SGSserverForm.resources
+C:\Users\Jonas\Downloads\tcpchat\TCP Chat\SGSserverTCP\Server\obj\Debug\Server.Properties.Resources.resources
+C:\Users\Jonas\Downloads\tcpchat\TCP Chat\SGSserverTCP\Server\obj\Debug\SGSserverTCP.csproj.GenerateResource.Cache
+C:\Users\Jonas\Downloads\tcpchat\TCP Chat\SGSserverTCP\Server\obj\Debug\Server.exe
+C:\Users\Jonas\Downloads\tcpchat\TCP Chat\SGSserverTCP\Server\obj\Debug\Server.pdb
+D:\Dropbox\Dropbox\UCS\2014_1\Redes II\Projeto de implementação\TCP Chat\SGSserverTCP\Server\obj\Debug\Server.exe
+D:\Dropbox\Dropbox\UCS\2014_1\Redes II\Projeto de implementação\TCP Chat\SGSserverTCP\Server\obj\Debug\Server.pdb

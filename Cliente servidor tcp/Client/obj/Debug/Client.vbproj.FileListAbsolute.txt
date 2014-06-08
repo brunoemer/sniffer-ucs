@@ -4,3 +4,9 @@ C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\Clie
 C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\Client\bin\Client.pdb
 C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\Client\bin\Client.xml
 C:\Users\UCS\Downloads\Cliente_servidor_tcp-2014-06-03\Cliente servidor tcp\Client\obj\Debug\Client.xml
+D:\Dropbox\Dropbox\UCS\2014_1\Redes II\Projeto de implementação\Cliente servidor tcp\Client\obj\Debug\Client.exe
+D:\Dropbox\Dropbox\UCS\2014_1\Redes II\Projeto de implementação\Cliente servidor tcp\Client\obj\Debug\Client.xml
+D:\Dropbox\Dropbox\UCS\2014_1\Redes II\Projeto de implementação\Cliente servidor tcp\Client\obj\Debug\Client.pdb
+D:\Dropbox\Dropbox\UCS\2014_1\Redes II\Projeto de implementação\Cliente servidor tcp\Client\bin\Client.exe
+D:\Dropbox\Dropbox\UCS\2014_1\Redes II\Projeto de implementação\Cliente servidor tcp\Client\bin\Client.pdb
+D:\Dropbox\Dropbox\UCS\2014_1\Redes II\Projeto de implementação\Cliente servidor tcp\Client\bin\Client.xml

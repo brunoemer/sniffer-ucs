@@ -5,7 +5,7 @@ Class TCPSrv
         ' Must listen on correct port- must be same as port client wants to connect on.
 
         Const portNumber As Integer = 8000
-        Dim tcpListener As New TcpListener(System.Net.IPAddress.Parse("172.18.40.32"), portNumber)
+        Dim tcpListener As New TcpListener(portNumber)
         tcpListener.Start()
         Console.WriteLine("Waiting for connection...")
         Try

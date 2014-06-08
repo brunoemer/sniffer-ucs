@@ -1,10 +1,18 @@
 Imports System.Net.Sockets
 Imports System.Text
+Imports System.Net
+
 Class TCPCli
     Shared Sub Main()
 
         Dim tcpClient As New System.Net.Sockets.TcpClient()
-        tcpClient.Connect("172.18.40.32", 8000)
+        Dim strIP As String
+        Dim HosyEntry As IPHostEntry
+        HosyEntry = Dns.GetHostEntry((Dns.GetHostName()))
+        strIP = HosyEntry.AddressList(1).ToString()
+
+
+        tcpClient.Connect(strIP, 8000)
         Dim networkStream As NetworkStream = tcpClient.GetStream()
         If networkStream.CanWrite And networkStream.CanRead Then
             ' Do a simple write.

@@ -24,7 +24,7 @@ namespace MJsniffer
         
         private byte      byHeaderLength;             //Header length
         private byte[]    byIPData = new byte[4096];  //Data carried by the datagram
-
+        public int ListIndex = 0;
 
         public IPHeader(byte[] byBuffer, int nReceived)
         {
@@ -151,11 +151,11 @@ namespace MJsniffer
                 int nFlags = usFlagsAndOffset >> 13;
                 if (nFlags == 2)
                 {
-                    return "Don't fragment";
+                    return "DF";
                 }
                 else if (nFlags == 1)
                 {
-                    return "More fragments to come";
+                    return "MF";
                 }
                 else
                 {
