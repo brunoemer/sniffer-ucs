@@ -77,99 +77,7 @@ namespace SnifferRedes2
             panel1.Invoke(addFrame, new object[] { ipHeader });
         }
 
-        //Helper function which returns the information contained in the IP header as a
-        //tree node
-        private TreeNode MakeIPTreeNode(IPHeader ipHeader)
-        {
-            TreeNode ipNode = new TreeNode();
 
-            ipNode.Text = "IP";
-            ipNode.Nodes.Add("Ver: " + ipHeader.Version);
-            ipNode.Nodes.Add("Header Length: " + ipHeader.HeaderLength);
-            ipNode.Nodes.Add("Differntiated Services: " + ipHeader.DifferentiatedServices);
-            ipNode.Nodes.Add("Total Length: " + ipHeader.TotalLength);
-            ipNode.Nodes.Add("Identification: " + ipHeader.Identification);
-            ipNode.Nodes.Add("Flags: " + ipHeader.Flags);
-            ipNode.Nodes.Add("Fragmentation Offset: " + ipHeader.FragmentationOffset);
-            ipNode.Nodes.Add("Time to live: " + ipHeader.TTL);
-            switch (ipHeader.ProtocolType)
-            {
-                case Protocol.TCP:
-                    ipNode.Nodes.Add("Protocol: " + "TCP");
-                    break;
-                case Protocol.UDP:
-                    ipNode.Nodes.Add("Protocol: " + "UDP");
-                    break;
-                case Protocol.Unknown:
-                    ipNode.Nodes.Add("Protocol: " + "Unknown");
-                    break;
-            }
-            ipNode.Nodes.Add("Checksum: " + ipHeader.Checksum);
-            ipNode.Nodes.Add("Source: " + ipHeader.SourceAddress.ToString());
-            ipNode.Nodes.Add("Destination: " + ipHeader.DestinationAddress.ToString());
-
-            return ipNode;
-        }
-
-        //Helper function which returns the information contained in the TCP header as a
-        //tree node
-        private TreeNode MakeTCPTreeNode(TCPHeader tcpHeader)
-        {
-            TreeNode tcpNode = new TreeNode();
-
-            tcpNode.Text = "TCP";
-
-            tcpNode.Nodes.Add("Source Port: " + tcpHeader.SourcePort);
-            tcpNode.Nodes.Add("Destination Port: " + tcpHeader.DestinationPort);
-            tcpNode.Nodes.Add("Sequence Number: " + tcpHeader.SequenceNumber);
-
-            if (tcpHeader.AcknowledgementNumber != "")
-                tcpNode.Nodes.Add("Acknowledgement Number: " + tcpHeader.AcknowledgementNumber);
-
-            tcpNode.Nodes.Add("Header Length: " + tcpHeader.HeaderLength);
-            tcpNode.Nodes.Add("Flags: " + tcpHeader.Flags);
-            tcpNode.Nodes.Add("Window Size: " + tcpHeader.WindowSize);
-            tcpNode.Nodes.Add("Checksum: " + tcpHeader.Checksum);
-
-            if (tcpHeader.UrgentPointer != "")
-                tcpNode.Nodes.Add("Urgent Pointer: " + tcpHeader.UrgentPointer);
-
-            return tcpNode;
-        }
-
-        //Helper function which returns the information contained in the UDP header as a
-        //tree node
-        private TreeNode MakeUDPTreeNode(UDPHeader udpHeader)
-        {
-            TreeNode udpNode = new TreeNode();
-
-            udpNode.Text = "UDP";
-            udpNode.Nodes.Add("Source Port: " + udpHeader.SourcePort);
-            udpNode.Nodes.Add("Destination Port: " + udpHeader.DestinationPort);
-            udpNode.Nodes.Add("Length: " + udpHeader.Length);
-            udpNode.Nodes.Add("Checksum: " + udpHeader.Checksum);
-
-            return udpNode;
-        }
-
-        //Helper function which returns the information contained in the DNS header as a
-        //tree node
-        private TreeNode MakeDNSTreeNode(byte[] byteData, int nLength)
-        {
-            DNSHeader dnsHeader = new DNSHeader(byteData, nLength);
-
-            TreeNode dnsNode = new TreeNode();
-
-            dnsNode.Text = "DNS";
-            dnsNode.Nodes.Add("Identification: " + dnsHeader.Identification);
-            dnsNode.Nodes.Add("Flags: " + dnsHeader.Flags);
-            dnsNode.Nodes.Add("Questions: " + dnsHeader.TotalQuestions);
-            dnsNode.Nodes.Add("Answer RRs: " + dnsHeader.TotalAnswerRRs);
-            dnsNode.Nodes.Add("Authority RRs: " + dnsHeader.TotalAuthorityRRs);
-            dnsNode.Nodes.Add("Additional RRs: " + dnsHeader.TotalAdditionalRRs);
-
-            return dnsNode;
-        }
 
         int PacotesRecebidos = 0;
         private void OnAddFrame(IPHeader frame)
@@ -182,7 +90,7 @@ namespace SnifferRedes2
         {
             panel1.Visible = false;
             panel1.Controls.Clear();
-            for (int i = 0; i < ListaPacotesRecebidos.Count; i++)
+            for (int i = FirstFrame; (i < ListaPacotesRecebidos.Count && i < FirstFrame + 10); i++)
             {
                 UserControlReceivedFrame u = new UserControlReceivedFrame(this);
                 u.Location = new Point(0, panel1.Controls.Count * u.Height);
@@ -290,9 +198,10 @@ namespace SnifferRedes2
 
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
+            FirstFrame = 0;
             ShowFrames();
         }
-
+        int FirstFrame = 0;
 
         public void FindConnectionPacks(IPHeader InitialPack)
         {
@@ -325,6 +234,28 @@ namespace SnifferRedes2
                 MessageBox.Show("O protocolo UDP não é orientado a conexão!");
             }
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (FirstFrame < ListaPacotesRecebidos.Count)
+            {
+                FirstFrame += 10;
+            }
+            ShowFrames();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (FirstFrame > 10)
+            {
+                FirstFrame -= 10;
+            }
+            else
+            {
+                FirstFrame = 0;
+            }
+            ShowFrames();
         }
 
 

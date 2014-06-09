@@ -74,11 +74,11 @@
             this.labelIndex.BackColor = System.Drawing.Color.Red;
             this.labelIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIndex.ForeColor = System.Drawing.Color.White;
-            this.labelIndex.Location = new System.Drawing.Point(4, 15);
+            this.labelIndex.Location = new System.Drawing.Point(0, 15);
             this.labelIndex.Name = "labelIndex";
-            this.labelIndex.Size = new System.Drawing.Size(25, 20);
+            this.labelIndex.Size = new System.Drawing.Size(36, 20);
             this.labelIndex.TabIndex = 2;
-            this.labelIndex.Text = "99";
+            this.labelIndex.Text = "999";
             this.labelIndex.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // toolTip1

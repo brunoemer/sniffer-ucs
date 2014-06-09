@@ -45,11 +45,10 @@
             // 
             // labelSource
             // 
-            this.labelSource.AutoSize = true;
             this.labelSource.Dock = System.Windows.Forms.DockStyle.Left;
-            this.labelSource.Location = new System.Drawing.Point(0, 48);
+            this.labelSource.Location = new System.Drawing.Point(0, 39);
             this.labelSource.Name = "labelSource";
-            this.labelSource.Size = new System.Drawing.Size(115, 13);
+            this.labelSource.Size = new System.Drawing.Size(116, 17);
             this.labelSource.TabIndex = 1;
             this.labelSource.Text = "192.168.123.135:8080";
             this.labelSource.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -57,9 +56,9 @@
             // labelDestination
             // 
             this.labelDestination.Dock = System.Windows.Forms.DockStyle.Right;
-            this.labelDestination.Location = new System.Drawing.Point(141, 48);
+            this.labelDestination.Location = new System.Drawing.Point(141, 39);
             this.labelDestination.Name = "labelDestination";
-            this.labelDestination.Size = new System.Drawing.Size(115, 15);
+            this.labelDestination.Size = new System.Drawing.Size(115, 17);
             this.labelDestination.TabIndex = 2;
             this.labelDestination.Text = "192.168.123.135:8080";
             this.labelDestination.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -70,7 +69,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(256, 48);
+            this.pictureBox1.Size = new System.Drawing.Size(256, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -79,7 +78,7 @@
             // 
             this.labelProtocol.AutoSize = true;
             this.labelProtocol.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProtocol.Location = new System.Drawing.Point(109, 17);
+            this.labelProtocol.Location = new System.Drawing.Point(109, 13);
             this.labelProtocol.Name = "labelProtocol";
             this.labelProtocol.Size = new System.Drawing.Size(31, 13);
             this.labelProtocol.TabIndex = 3;
@@ -113,11 +112,11 @@
             this.labelIndex.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelIndex.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIndex.ForeColor = System.Drawing.Color.White;
-            this.labelIndex.Location = new System.Drawing.Point(116, 45);
+            this.labelIndex.Location = new System.Drawing.Point(112, 36);
             this.labelIndex.Name = "labelIndex";
-            this.labelIndex.Size = new System.Drawing.Size(25, 17);
+            this.labelIndex.Size = new System.Drawing.Size(33, 17);
             this.labelIndex.TabIndex = 4;
-            this.labelIndex.Text = "99";
+            this.labelIndex.Text = "999";
             this.labelIndex.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // UserControlReceivedFrame
@@ -132,7 +131,7 @@
             this.Controls.Add(this.labelSource);
             this.Controls.Add(this.pictureBox1);
             this.Name = "UserControlReceivedFrame";
-            this.Size = new System.Drawing.Size(256, 63);
+            this.Size = new System.Drawing.Size(256, 56);
             this.toolTip1.SetToolTip(this, "Opa");
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);

@@ -62,7 +62,7 @@ namespace MJsniffer
                                                true);                           //option to true
 
                     byte[] byTrue = new byte[4] {1, 0, 0, 0};
-                    byte[] byOut = new byte[4]{1, 0, 0, 0}; //Capture outgoing packets
+                    byte[] byOut = new byte[4]{0, 0, 0, 0}; //Capture outgoing packets
 
                     //Socket.IOControl is analogous to the WSAIoctl method of Winsock 2
                     mainSocket.IOControl(IOControlCode.ReceiveAll,              //Equivalent to SIO_RCVALL constant
@@ -142,8 +142,6 @@ namespace MJsniffer
                                                                                     //carried by the IP datagram
                                                         ipHeader.MessageLength);//Length of the data field                    
 
-                    if (tcpHeader.SourcePort == "8000" || tcpHeader.DestinationPort == "8000")
-                    {
 
                         rootNode.Nodes.Add(ipNode);
 
@@ -166,7 +164,7 @@ namespace MJsniffer
 
                         //Thread safe adding of the nodes
                         treeView.Invoke(addTreeNode, new object[] { rootNode });
-                    }
+                    
                     break;
 
                 //case Protocol.UDP:
@@ -193,12 +191,15 @@ namespace MJsniffer
 
                 //    break;
 
-                case Protocol.Unknown:
+                default:
+                    t.Add(ipHeader.ProtocolType.ToString());
                     break;
             }
 
 
         }
+
+        List<string> t = new List<string>();
 
         //Helper function which returns the information contained in the IP header as a
         //tree node
