@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MJsniffer.DNSHeader">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAARAAhEAAIAgIQAAAAAAAAAAAAAAIABAAAAAIAAAA=</HashCode>
+      <FileName>Class\DNSHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MJsniffer.IPHeader">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAJAADBQKIEEAEAwBAQggAAQAAADAAAAAgAMAAAAQ=</HashCode>
+      <FileName>Class\IPHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MJsniffer.TCPHeader">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAADAoAAAAAAAAMEAjEAggAAUCEABAAEAAEIAAAAAA=</HashCode>
+      <FileName>Class\TCPHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MJsniffer.UDPHeader">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QIAAAAAAAAAAAAAAAACEAgBAAUCAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class\UDPHeader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnifferRedes2.Form1" Collapsed="true">
+    <Position X="8" Y="0.5" Width="2.25" />
+    <NestedTypes>
+      <Delegate Name="SnifferRedes2.Form1.AddFrame" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Form1.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAABCCAQAEEIoEGAAFgCAAMaBAoAACQAgQCAABA=</HashCode>
+      <FileName>Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnifferRedes2.FormTCPDetail" Collapsed="true">
+    <Position X="8" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAMAAAAJACAEAAAYMhSYEAICAAIBAAAABBAAAQFAAQA=</HashCode>
+      <FileName>FormTCPDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnifferRedes2.FormUDPDetail" Collapsed="true">
+    <Position X="8" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>IAMAAAABACAFAAAQEhCIEAACAAIBAAAAAAAAAABAASA=</HashCode>
+      <FileName>FormUDPDetail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnifferRedes2.UserControlDiagrama" Collapsed="true">
+    <Position X="8" Y="2" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAABAACAACAACAACAAAACAAAAAAAAAAgAAQBAAQQ=</HashCode>
+      <FileName>UserControlDiagrama.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnifferRedes2.UserControlFrame" Collapsed="true">
+    <Position X="8" Y="1.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFACAAABAAAACAAAACAAAAAAAAAACAAABAAAA=</HashCode>
+      <FileName>UserControlFrame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SnifferRedes2.UserControlReceivedFrame" Collapsed="true">
+    <Position X="8" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AACAAABFACAAQEACAAGBAEADAEAgAAAAAAgAAABAAgA=</HashCode>
+      <FileName>UserControlReceivedFrame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="MJsniffer.Protocol">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAIAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Class\Protocol.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

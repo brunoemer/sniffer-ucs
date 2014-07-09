@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SnifferRedes2</name>
+    </assembly>
+    <members>
+        <member name="M:SnifferRedes2.Form1.#ctor">
+            <summary>
+            Função de inicialização da interface principal
+            </summary>
+        </member>
+        <member name="M:SnifferRedes2.Form1.OnReceive(System.IAsyncResult)">
+            <summary>
+            Evento de recebimento dos pacotes para tratamento
+            </summary>
+            <param name="ar"></param>
+        </member>
+        <member name="M:SnifferRedes2.Form1.ParseData(System.Byte[],System.Int32)">
+            <summary>
+            Função que recebe um array de bytes contendo as informações do frame e monta o frame com estes dados.
+            Após a montagem deste frame, o mesmo é armazenado na lista de pacotes recebidos.
+            </summary>
+            <param name="byteData"></param>
+            <param name="nReceived"></param>
+        </member>
+        <member name="M:SnifferRedes2.Form1.OnAddFrame(MJsniffer.IPHeader)">
+            <summary>
+            Função que exibe a quantidade de pacotes recebidos na interface do usuário
+            </summary>
+            <param name="frame"></param>
+        </member>
+        <member name="M:SnifferRedes2.Form1.ShowFrames">
+            <summary>
+            Função que exibe os pacotes recebidos para o usuário em forma de lista, com os datagramas
+            </summary>
+        </member>
+        <member name="M:SnifferRedes2.Form1.Form1_Load(System.Object,System.EventArgs)">
+            <summary>
+            Função de carregamento da interface principal
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SnifferRedes2.Form1.toolStripButton1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento de click do botão de conexão
+            Efetua a conexão/desconexão na rede
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SnifferRedes2.Form1.toolStripButton2_Click(System.Object,System.EventArgs)">
+            <summary>
+            evento de click no botão que limpa os dados recebidos,
+            faz com que todos pacotes recebidos até o momento sejam eliminados
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SnifferRedes2.Form1.treeView_NodeMouseDoubleClick(System.Object,System.Windows.Forms.TreeNodeMouseClickEventArgs)">
+            <summary>
+            Evento de duplo click nos pacotes recebidos, quando é efetuado duplo clique em um pacote,
+            o datagrama do mesmo é exibido
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SnifferRedes2.Form1.toolStripButton3_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento de click do botão que exibe os pacotes
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SnifferRedes2.Form1.FindConnectionPacks(MJsniffer.IPHeader)">
+            <summary>
+            Função que varre todos os pacotes recebidos em busca de pacotes que 
+            pertençam a mesma conexão do pacote fornecido
+            </summary>
+            <param name="InitialPack"></param>
+        </member>
+        <member name="M:SnifferRedes2.Form1.button1_Click_1(System.Object,System.EventArgs)">
+            <summary>
+            Evento de click do botão que visualiza os próximos 10 pacotes recebidos
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:SnifferRedes2.Form1.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Evento de click do botão que visualiza os 10 pacotes recebidos anteriores
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:SnifferRedes2.Form1.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SnifferRedes2.Form1.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SnifferRedes2.Form1.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:SnifferRedes2.FormTCPDetail.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SnifferRedes2.FormTCPDetail.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SnifferRedes2.FormTCPDetail.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:SnifferRedes2.FormUDPDetail.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SnifferRedes2.FormUDPDetail.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SnifferRedes2.FormUDPDetail.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:SnifferRedes2.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="F:SnifferRedes2.UserControlDiagrama.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SnifferRedes2.UserControlDiagrama.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SnifferRedes2.UserControlDiagrama.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:SnifferRedes2.UserControlFrame.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SnifferRedes2.UserControlFrame.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SnifferRedes2.UserControlFrame.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:SnifferRedes2.UserControlReceivedFrame.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:SnifferRedes2.UserControlReceivedFrame.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:SnifferRedes2.UserControlReceivedFrame.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:SnifferRedes2.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:SnifferRedes2.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:SnifferRedes2.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:SnifferRedes2.Properties.Resources.computador">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SnifferRedes2.Properties.Resources.esq_dir">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:SnifferRedes2.Properties.Resources.seta">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
